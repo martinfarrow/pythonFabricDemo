@@ -74,8 +74,7 @@ class connMan():
             # try and clone it
             self.log.info("Cloning ssmParameterManager remotely")
             self.connection.run( r'cd ./demo;'+
-                                r'GIT_SSH_COMMAND="ssh -F ./demoSshConfig";'+
-                                r'git clone git@gittun:martinfarrow/ssmParameterManager.git')
+                                r'GIT_SSH_COMMAND="ssh -F ./demoSshConfig git clone git@gittun:martinfarrow/ssmParameterManager.git')
 
 
     def createTmpSshConfig(self, fpath):
